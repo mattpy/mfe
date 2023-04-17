@@ -19,7 +19,7 @@ const devConfig = {
       exposes: {
         "./MarketingApp": "./src/bootstrap.js",
       },
-      shared: Object.keys(packageJson.dependencies),
+      shared: packageJson.dependencies,
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
